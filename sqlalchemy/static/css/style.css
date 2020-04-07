@@ -1,0 +1,57 @@
+.margin_20px_left {
+    margin-left: 40px;
+}
+
+.margin_20px {
+    margin: 20px;
+}
+
+.padding_20px {
+    padding: 20px;
+}
+
+.margin_100px_left {
+    margin-left: 100px;
+}
+
+.bigger {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.purple-bg {
+    background-color: #baafc9;
+}
+
+.grey-bg {
+    background-color: #cfcfcf;
+}
+
+.green-bg {
+    background-color: #c7ffe9;
+}
+
+.red-bg {
+    background-color: #ffa799;
+}
+
+th, td {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 400px;
+}
+
+.extra_width {
+    width: 700px;
+}
+
+form {
+    background-color: #cfcfcf;
+    padding: 50px;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+
+.font_20px {
+    font-size: 20px;
+}

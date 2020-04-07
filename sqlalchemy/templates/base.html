@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" >
+    <title>{{ title }}</title>
+</head>
+<body>
+    <nav>
+        {% if current_user.is_authenticated %}
+            <a class="navbar-brand text-info margin_100px_left bigger" href="/logout"> {{ current_user.name }} </a>
+        {% else %}
+            <a class="btn btn-primary margin_20px margin_100px_left" href="/register">Зарегистрироваться</a>
+            <a class="btn btn-primary margin_20px" href="/login">Войти</a>
+        {% endif %}
+    </nav>
+
+    <h2 class="text-info margin_20px_left">Миссия колонизация Марса</h2>
+    <h4 class="text-muted margin_20px_left">И на Марсе будут яблони цвести!</h4>
+    <br>
+
+    <main role="main" class="container">
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
